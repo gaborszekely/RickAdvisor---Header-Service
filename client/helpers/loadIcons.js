@@ -3,11 +3,14 @@ import {
   faPhone,
   faMapMarkerAlt,
   faGlobe,
+  faShare,
+  // farBookmark,
 } from '@fortawesome/free-solid-svg-icons';
 
-library.add(faPhone);
-library.add(faMapMarkerAlt);
-library.add(faGlobe);
+import { faBookmark } from '@fortawesome/free-regular-svg-icons';
+
+library.add(faPhone, faMapMarkerAlt, faGlobe, faShare, faBookmark);
+
 /*
 FontAwesomeIcon.propTypes = {
   border: PropTypes.bool,

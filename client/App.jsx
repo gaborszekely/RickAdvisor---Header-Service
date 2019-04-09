@@ -57,11 +57,21 @@ const App = ({ hotel }) => (
       <div>
         <div className={`${wrapper} ${hotel__save}`}>
           <div>
-            {/* put icon here */}
+            <FontAwesomeIcon
+              icon={['far', 'bookmark']}
+              size="lg"
+              color="#444"
+              style={iconStyle}
+            />
             <span>Save</span>
           </div>
           <div>
-            {/* put icon here */}
+            <FontAwesomeIcon
+              icon="share"
+              size="lg"
+              color="#444"
+              style={iconStyle}
+            />
             <span>Share</span>
           </div>
         </div>
