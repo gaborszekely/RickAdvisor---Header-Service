@@ -15,7 +15,6 @@ const AppState = ({ hotelId }) => {
     fetch(`http://localhost:3000/api/hotels/${hotelId}`)
       .then(res => res.json())
       .then(([data]) => {
-        console.log(data);
         setHotel(data);
       })
       .catch(console.error);
@@ -37,7 +36,7 @@ AppState.propTypes = {
 };
 
 ReactDOM.render(
-  <AppState hotelId="5cad03f7b570ea532bc9834b" />,
+  <AppState hotelId="5cad22d0f6c2dc08d14743c5" />,
   document.getElementById('root')
 );
 

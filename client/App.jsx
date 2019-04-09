@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import convertNum from './helpers/convertNum';
-
+import SVG from './SVG';
 import ReviewStars from './ReviewStars/index';
 import styles from './css/styles.scss';
 import './helpers/loadIcons';
