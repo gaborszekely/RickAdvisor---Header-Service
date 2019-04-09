@@ -1,0 +1,60 @@
+@mixin center {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+/* For bold prices at bottom */
+$black: #000;
+$black-bold-text: #000a12;
+$main-font-color: #2c2c2c;
+$dark-gray-secondary: #4a4a4a;
+/* For small gray text */
+$secondary-gray-font: #767676;
+$another-secondary-gray-font: #888;
+$light-gray: #f9f9f9;
+$light-gray-secondary: #aab4be;
+$super-light-gray: #f2f2f2;
+$gray-border-color: #e5e5e5;
+$ratings-bg: #e3e3e3;
+$checkbox-gray-1: #b8b8b8;
+$checkbox-gray-bg: #ddd;
+
+/* For green text, greeen buttons */
+$dark-green-main: #078171;
+/* For header/navbar, little green bars */
+$main-green: #5da880;
+$light-green: #5da880;
+/* For green h1/h2/etc.  */
+$dark-green-headers: #458371;
+$light-green-link-hover: #00a680;
+
+/* for yellow buttons */
+$button-yellow: #fc0;
+
+/* LOCATION COMPONENT */
+$dark-blue: #069;
+$red-color: #e46615;
+
+/* BOOKING COMPONENT */
+/* Red font */
+$red: #ff6500;
+
+$white: #fff;
+
+$main-border: 1px solid#e5e5e5;
+$thin-gray-border: 0.5px solid #e5e5e5;
+$darker-gray-border: 1px solid #d6d6d6;
+$darker-gray-border-secondary: 1px solid #ddd;
+$lighter-gray-border: 1px solid #eeeeee;
+$checkbox-border: 1px solid #888;
+
+$black-tint-5: rgba(0, 0, 0, 0.05);
+$black-tint-10: rgba(0, 0, 0, 0.1);
+$black-tint-25: rgba(0, 0, 0, 0.25);
+$black-tint-50: rgba(0, 0, 0, 0.5);
+
+$white-tint-0: rgba(255, 255, 255, 0);
+$white-tint-5: rgba(255, 255, 255, 0.05);
+$white-tint-10: rgba(255, 255, 255, 0.1);
+$white-tint-25: rgba(255, 255, 255, 0.25);
+$white-tint-50: rgba(255, 255, 255, 0.5);

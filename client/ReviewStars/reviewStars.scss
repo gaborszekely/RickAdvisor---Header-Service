@@ -1,0 +1,43 @@
+@import '../css/globals.scss';
+
+.review__stars__wrapper {
+  display: flex !important;
+  align-items: center;
+  width: auto;
+}
+
+.stars__wrapper {
+  display: inline-block;
+}
+
+.review__stars__full,
+.review__stars__empty {
+  @include center;
+  background-color: $white;
+  border: 2px solid lighten($main-green, 10%);
+  border-radius: 50%;
+  display: inline-block;
+  height: 16px;
+  margin: 0 1px 0 0 !important;
+  padding: 0 !important;
+  position: relative;
+  width: 16px;
+}
+
+.review__stars__full::after {
+  background-color: $main-green;
+  border-radius: 50%;
+  content: '';
+  height: 60%;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 60%;
+}
+
+.review__stars__description {
+  display: inline-block;
+  margin-left: 5px;
+  padding-bottom: 3px;
+}
