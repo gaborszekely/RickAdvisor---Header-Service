@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import ReactDOM from 'react-dom';
 import PropTypes from 'prop-types';
 import App from './App';
-import { faBookmark } from '@fortawesome/free-solid-svg-icons';
 
 const AppState = ({ hotelId }) => {
   const [hotel, setHotel] = useState({});
