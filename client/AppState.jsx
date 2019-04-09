@@ -2,9 +2,14 @@ import React, { useState, useEffect } from 'react';
 import ReactDOM from 'react-dom';
 import PropTypes from 'prop-types';
 import App from './App';
+import { faBookmark } from '@fortawesome/free-solid-svg-icons';
 
 const AppState = ({ hotelId }) => {
   const [hotel, setHotel] = useState({});
+  const [bookmark, setBookmark] = useState(false);
+  const [share, setShare] = useState(false);
+  const toggleBookmark = () => setBookmark(!bookmark);
+  const toggleShare = () => setShare(!share);
 
   useEffect(() => {
     fetch(`http://localhost:3000/api/hotels/${hotelId}`)
@@ -16,7 +21,15 @@ const AppState = ({ hotelId }) => {
       .catch(console.error);
   }, [hotelId]);
 
-  return <App hotel={hotel} />;
+  return (
+    <App
+      hotel={hotel}
+      share={share}
+      toggleShare={toggleShare}
+      bookmark={bookmark}
+      toggleBookmark={toggleBookmark}
+    />
+  );
 };
 
 AppState.propTypes = {

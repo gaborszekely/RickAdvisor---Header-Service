@@ -4,12 +4,13 @@ import {
   faMapMarkerAlt,
   faGlobe,
   faShare,
+  faBookmark,
   // farBookmark,
 } from '@fortawesome/free-solid-svg-icons';
 
-import { faBookmark } from '@fortawesome/free-regular-svg-icons';
+import { faBookmark as farBookmark } from '@fortawesome/free-regular-svg-icons';
 
-library.add(faPhone, faMapMarkerAlt, faGlobe, faShare, faBookmark);
+library.add(faPhone, faMapMarkerAlt, faGlobe, faShare, faBookmark, farBookmark);
 
 /*
 FontAwesomeIcon.propTypes = {
