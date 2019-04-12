@@ -1,8 +1,8 @@
 const Hotel = require('./hotelModel');
 const generateHotels = require('./seed');
 
-const seedMongo = async () => {
-  const hotels = generateHotels();
+const seedMongo = async (n = 99) => {
+  const hotels = generateHotels(n);
   for (let hotel of hotels) {
     const newHotel = new Hotel(hotel);
     try {

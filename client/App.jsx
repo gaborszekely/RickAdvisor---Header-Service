@@ -3,26 +3,27 @@ import PropTypes from 'prop-types';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import convertNum from './helpers/convertNum';
-
+import SVG from './SVG';
 import ReviewStars from './ReviewStars/index';
-import styles from './css/styles.scss';
-import './helpers/loadIcons';
-
-const {
+import {
   upper__wrapper,
   wrapper,
   hotel__ranking,
   hotel__website,
   hotel__save,
-} = styles;
+  hotel__shareIcon,
+  header__component__wrapper,
+} from './css/styles.scss';
+import './helpers/loadIcons';
 
 const iconStyle = {
   marginRight: '5px',
 };
 
-const App = ({ hotel }) => (
-  <div>
+const App = ({ hotel, share, toggleShare, bookmark, toggleBookmark }) => (
+  <div className={header__component__wrapper}>
     <h1>{hotel.name}</h1>
+
     <div className={upper__wrapper}>
       <div>
         <div className={wrapper}>
@@ -56,20 +57,28 @@ const App = ({ hotel }) => (
       </div>
       <div>
         <div className={`${wrapper} ${hotel__save}`}>
-          <div>
+          <div
+            className={hotel__shareIcon}
+            onMouseOver={toggleBookmark}
+            onMouseOut={toggleBookmark}
+          >
             <FontAwesomeIcon
-              icon={['far', 'bookmark']}
+              icon={bookmark ? 'bookmark' : ['far', 'bookmark']}
               size="lg"
-              color="#444"
+              color={bookmark ? '#5da880' : '#444'}
               style={iconStyle}
             />
             <span>Save</span>
           </div>
-          <div>
+          <div
+            className={hotel__shareIcon}
+            onMouseOver={toggleShare}
+            onMouseOut={toggleShare}
+          >
             <FontAwesomeIcon
               icon="share"
               size="lg"
-              color="#444"
+              color={share ? '#5da880' : '#444'}
               style={iconStyle}
             />
             <span>Share</span>
@@ -89,6 +98,10 @@ App.propTypes = {
     ranking: PropTypes.number.isRequired,
     url: PropTypes.string.isRequired,
   }).isRequired,
+  share: PropTypes.bool.isRequired,
+  bookmark: PropTypes.bool.isRequired,
+  toggleShare: PropTypes.func.isRequired,
+  toggleBookmark: PropTypes.func.isRequired,
 };
 
 export default App;
