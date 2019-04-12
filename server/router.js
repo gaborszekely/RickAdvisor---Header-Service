@@ -9,8 +9,8 @@ router
     res.json(await Hotel.find({}));
   })
   .get('/hotels', async (req, res) => res.json(await Hotel.find({})))
-  .get('/hotels/:id', async (req, res) =>
-    res.json(await Hotel.find({ _id: req.params.id }))
+  .get('/hotels/:name', async (req, res) =>
+    res.json(await Hotel.find({ name: req.params.name }))
   )
   .post('/hotels/create', async (req, res) => {
     const newHotel = new Hotel(req.body);

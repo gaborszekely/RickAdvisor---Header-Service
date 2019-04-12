@@ -5,25 +5,25 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import convertNum from './helpers/convertNum';
 import SVG from './SVG';
 import ReviewStars from './ReviewStars/index';
-import styles from './css/styles.scss';
-import './helpers/loadIcons';
-
-const {
+import {
   upper__wrapper,
   wrapper,
   hotel__ranking,
   hotel__website,
   hotel__save,
   hotel__shareIcon,
-} = styles;
+  header__component__wrapper,
+} from './css/styles.scss';
+import './helpers/loadIcons';
 
 const iconStyle = {
   marginRight: '5px',
 };
 
 const App = ({ hotel, share, toggleShare, bookmark, toggleBookmark }) => (
-  <div>
+  <div className={header__component__wrapper}>
     <h1>{hotel.name}</h1>
+
     <div className={upper__wrapper}>
       <div>
         <div className={wrapper}>

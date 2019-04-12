@@ -43,7 +43,7 @@ const generateRating = () => {
 const generateRankings = () =>
   Array.from({ length: 100 }, (v, k) => k + 1).filter(i => i !== 3);
 
-const generateHotels = (n = 99) => {
+const generateHotels = n => {
   const hotels = [];
   const rankings = generateRankings();
 

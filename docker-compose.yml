@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  app:
+    build: .
+    depends_on:
+      - 'database'
+    ports:
+      - '3000:3000'
+    volumes:
+      - ./app:/src/app
+
+  database:
+    image: mongo:latest

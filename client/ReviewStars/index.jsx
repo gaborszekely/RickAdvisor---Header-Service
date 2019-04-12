@@ -35,7 +35,7 @@ const ReviewStars = ({ rating, total }) => {
 
 ReviewStars.propTypes = {
   rating: PropTypes.number.isRequired,
-  total: PropTypes.number.isRequired,
+  total: PropTypes.string.isRequired,
 };
 
 export default ReviewStars;

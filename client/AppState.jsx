@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import PropTypes from 'prop-types';
 import App from './App';
 
-const AppState = ({ hotelId }) => {
+const AppState = ({ hotelName }) => {
   const [hotel, setHotel] = useState({});
   const [bookmark, setBookmark] = useState(false);
   const [share, setShare] = useState(false);
@@ -11,13 +11,13 @@ const AppState = ({ hotelId }) => {
   const toggleShare = () => setShare(!share);
 
   useEffect(() => {
-    fetch(`http://localhost:3000/api/hotels/${hotelId}`)
+    fetch(`http://localhost:3005/api/hotels/${hotelName}`)
       .then(res => res.json())
       .then(([data]) => {
         setHotel(data);
       })
       .catch(console.error);
-  }, [hotelId]);
+  }, [hotelName]);
 
   return (
     <App
@@ -31,12 +31,12 @@ const AppState = ({ hotelId }) => {
 };
 
 AppState.propTypes = {
-  hotelId: PropTypes.string.isRequired,
+  hotelName: PropTypes.string.isRequired,
 };
 
 ReactDOM.render(
-  <AppState hotelId="5cad22d0f6c2dc08d14743c5" />,
-  document.getElementById('root')
+  <AppState hotelName="Stanley Hotel" />,
+  document.getElementById('header')
 );
 
 export default AppState;

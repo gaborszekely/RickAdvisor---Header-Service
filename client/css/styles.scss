@@ -1,27 +1,17 @@
 @import 'globals';
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-body {
-  background-color: $white;
-  color: $main-font-color;
+.header__component__wrapper {
   font-family: Arial, Tahoma, sans-serif;
-  margin-top: 3em;
-  overflow-y: scroll;
-}
 
-h1 {
-  font-weight: bold;
-  font-size: 32px;
-  line-height: 36px;
-  color: #000a12;
-  margin: 0;
-  margin-bottom: 10px;
-  padding: 0;
+  h1 {
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 36px;
+    color: #000a12;
+    margin: 0;
+    margin-bottom: 10px;
+    padding: 0;
+  }
 }
 
 .upper__wrapper {
