@@ -1,4 +1,4 @@
-# RickAdvisor - Reviews Microservice
+# RickAdvisor - Header Microservice
 
 This project consisted of designing, building and deploying a fully functional full-stack web application using a microservices-oriented architecture. Our team chose to model our UI off of a popular TripAdvisor Hotel Reviews page and fully replicate the look, feel and functionality of the application.
 
