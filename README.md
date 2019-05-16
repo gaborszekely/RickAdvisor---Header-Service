@@ -2,6 +2,8 @@
 
 This projects consised of designing, building and deploying a fully function full-stack web application using a microservices-oriented atchitecture. Our team chose to model our UI off of a popular TripAdvisor Hotel Reviews page and fully replicate the look, feel and functionality of the web app.
 
+This microservice consisted of the Header component which displays basic information about the hotel as well as allows users to save individual hotels to their profile.
+
 ## Table of Contents
 
 1. [Usage](#Usage)
@@ -98,3 +100,4 @@ See also the list of [contributors](https://github.com/your/project/contributors
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+cd
