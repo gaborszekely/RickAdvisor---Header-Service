@@ -43,23 +43,33 @@ End with an example of getting some data out of the system or using it for a lit
 
 ## Running the tests
 
-Explain how to run the automated tests for this system
-
-### Break down into end to end tests
-
-Explain what these tests test and why
-
+To run individual test with Jest:
 ```
-Give an example
+npm run test
 ```
 
-### And coding style tests
-
-Explain what these tests test and why
-
+To run continuous test with Jest:
 ```
-Give an example
+npm run test:watch
 ```
+
+To run code coverage tests with Jest:
+```
+npm run test:coverage
+```
+
+### End to end testing
+
+Our end-to-end tests consisted of using React-Testing-Library to test interactivity between dynamic page elements including modals, button clicks and tabs.
+
+Example:
+```
+When user clicks the "Photos" tab, component should switch main view layer to display user-uploaded images and comments.
+```
+
+### Coding style
+
+Our codebase utilized ESLint along with the AirBnB style guide to make sure our coding conformed to the rigorous style standards industry code. Our code remained fully up-to-date with the A11y accessibility requirements in order to provide all users with a positive experience on our page.
 
 ## Deployment
 
@@ -100,4 +110,3 @@ See also the list of [contributors](https://github.com/your/project/contributors
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-cd
