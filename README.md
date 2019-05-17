@@ -8,9 +8,21 @@ This microservice consisted of the Header component which displays basic informa
 
 ## Table of Contents
 
-1. [Usage](#Usage)
-2. [Requirements](#requirements)
-3. [Development](#development)
+- [RickAdvisor - Header Microservice](#rickadvisor---header-microservice)
+  - [Table of Contents](#table-of-contents)
+  - [Getting Started](#getting-started)
+    - [Prerequisites](#prerequisites)
+    - [Installing](#installing)
+  - [Running the tests](#running-the-tests)
+    - [End to end testing](#end-to-end-testing)
+    - [Coding style](#coding-style)
+  - [Deployment](#deployment)
+  - [Built With](#built-with)
+  - [Contributing](#contributing)
+  - [Related Projects](#related-projects)
+  - [Versioning](#versioning)
+  - [Authors](#authors)
+  - [License](#license)
 
 ## Getting Started
 
