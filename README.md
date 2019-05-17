@@ -4,6 +4,8 @@ This project consisted of designing, building and deploying a fully functional f
 
 This microservice consisted of the Header component which displays basic information about the hotel as well as allows users to save individual hotels to their profile.
 
+![Header Component Screenshot](screenshots/header.png)
+
 ## Table of Contents
 
 1. [Usage](#Usage)
