@@ -30,44 +30,46 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
-From within the root directory:
+This application uses Node.js, which can be downloaded from the following [link](https://nodejs.org/en/download/).
+
+Webpack is also required. Run the following from within the root directory:
 
 ```sh
 npm install -g webpack
-npm install
 ```
 
 ### Installing
 
-A step by step series of examples that tell you how to get a development env running
+In order to install the application's dependencies, run the following commands:
 
-Say what the step will be
+In the "client" directory:
 
-```
-Give the example
-```
-
-And repeat
-
-```
-until finished
+```sh
+npm install
 ```
 
-End with an example of getting some data out of the system or using it for a little demo
+In the "server" directory:
+
+```
+npm install
+```
 
 ## Running the tests
 
 To run individual test with Jest:
+
 ```
 npm run test
 ```
 
 To run continuous test with Jest:
+
 ```
 npm run test:watch
 ```
 
 To run code coverage tests with Jest:
+
 ```
 npm run test:coverage
 ```
@@ -77,8 +79,9 @@ npm run test:coverage
 Our end-to-end tests consisted of using React-Testing-Library to test interactivity between dynamic page elements including modals, button clicks and tabs.
 
 Example:
+
 ```
-When user clicks the "Photos" tab, component should switch main view layer to display user-uploaded images and comments.
+When user hovers over the "Save Hotel" icon, component should update UI to change icon color.
 ```
 
 ### Coding style
@@ -91,36 +94,35 @@ Our deployment process consisted of using Docker to containerize our web applica
 
 ## Built With
 
-* [React.js](https://reactjs.org) - Front-end framework used
-* [React Context API](https://reactjs.org/docs/context.html) - State Management
-* [Node.js](https://nodejs.org/en/) - Server-side solution
-* [Express.js](https://expressjs.com/) - Node.js framework used
-* [MongoDB](https://www.mongodb.com/) - Data persistence
-* [Mongoose](https://mongoosejs.com/) - ORM
-* [SCSS](https://sass-lang.com/) - CSS preprocessor
+- [React.js](https://reactjs.org) - Front-end framework used
+- [Node.js](https://nodejs.org/en/) - Server-side solution
+- [Express.js](https://expressjs.com/) - Node.js framework used
+- [MongoDB](https://www.mongodb.com/) - Data persistence
+- [Mongoose](https://mongoosejs.com/) - ORM
+- [SCSS](https://sass-lang.com/) - CSS preprocessor
 
 ## Contributing
 
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
+For details on our code of conduct, and the process for submitting pull requests to us, please see [this link](CODE_OF_CONDUCT.md).
 
 ## Related Projects
 
-  - https://github.com/rickadviser/gabe-reviews-proxy
-  - https://github.com/rickadviser/gabe-reviews-service
-  - https://github.com/rickadviser/Jared-About-Service
-  - https://github.com/rickadviser/RickMorrisonService
-  - https://github.com/rickadviser/Pete_Location
+- https://github.com/rickadviser/gabe-reviews-proxy
+- https://github.com/rickadviser/gabe-reviews-service
+- https://github.com/rickadviser/Jared-About-Service
+- https://github.com/rickadviser/RickMorrisonService
+- https://github.com/rickadviser/Pete_Location
 
 ## Versioning
 
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
+We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/gaborszekely/RickAdvisor---Header-Service/tags).
 
 ## Authors
 
-* **Gabor Szekely** - *Project lead* - [gaborszekely](https://github.com/gaborszekely)
+- **Gabor Szekely** - _Project lead_ - [gaborszekely](https://github.com/gaborszekely)
 
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+See also the list of [contributors](https://gist.github.com/gaborszekely/573065cdd7b73e9f0f2894d5f7ef76eb) who participated in this project.
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
